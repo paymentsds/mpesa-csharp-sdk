@@ -1,0 +1,12 @@
+/Users/delfim/RiderProjects/Test/MPesa/bin/Debug/net5.0/MPesa.deps.json
+/Users/delfim/RiderProjects/Test/MPesa/bin/Debug/net5.0/MPesa.dll
+/Users/delfim/RiderProjects/Test/MPesa/bin/Debug/net5.0/ref/MPesa.dll
+/Users/delfim/RiderProjects/Test/MPesa/bin/Debug/net5.0/MPesa.pdb
+/Users/delfim/RiderProjects/Test/MPesa/obj/Debug/net5.0/MPesa.csproj.AssemblyReference.cache
+/Users/delfim/RiderProjects/Test/MPesa/obj/Debug/net5.0/MPesa.GeneratedMSBuildEditorConfig.editorconfig
+/Users/delfim/RiderProjects/Test/MPesa/obj/Debug/net5.0/MPesa.AssemblyInfoInputs.cache
+/Users/delfim/RiderProjects/Test/MPesa/obj/Debug/net5.0/MPesa.AssemblyInfo.cs
+/Users/delfim/RiderProjects/Test/MPesa/obj/Debug/net5.0/MPesa.csproj.CoreCompileInputs.cache
+/Users/delfim/RiderProjects/Test/MPesa/obj/Debug/net5.0/MPesa.dll
+/Users/delfim/RiderProjects/Test/MPesa/obj/Debug/net5.0/ref/MPesa.dll
+/Users/delfim/RiderProjects/Test/MPesa/obj/Debug/net5.0/MPesa.pdb

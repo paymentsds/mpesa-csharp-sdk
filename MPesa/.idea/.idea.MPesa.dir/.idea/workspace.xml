@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="17589a46-6360-4e8e-bea9-32a3700ab01b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Caller/Caller.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Caller/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Caller/appsettings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Caller/bin/Debug/net5.0/Caller.deps.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Caller/bin/Debug/net5.0/Caller.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Caller/bin/Debug/net5.0/Caller.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Caller/bin/Debug/net5.0/Caller.runtimeconfig.dev.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Caller/bin/Debug/net5.0/Caller.runtimeconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Caller/bin/Debug/net5.0/MPesa.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Caller/bin/Debug/net5.0/MPesa.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Caller/bin/Debug/net5.0/ref/Caller.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Caller/obj/Caller.csproj.nuget.dgspec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Caller/obj/Caller.csproj.nuget.g.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Caller/obj/Caller.csproj.nuget.g.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Caller/obj/Debug/net5.0/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Caller/obj/Debug/net5.0/Caller.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Caller/obj/Debug/net5.0/Caller.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Caller/obj/Debug/net5.0/Caller.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Caller/obj/Debug/net5.0/Caller.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Caller/obj/Debug/net5.0/Caller.csproj.AssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Caller/obj/Debug/net5.0/Caller.csproj.CopyComplete" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Caller/obj/Debug/net5.0/Caller.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Caller/obj/Debug/net5.0/Caller.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Caller/obj/Debug/net5.0/Caller.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Caller/obj/Debug/net5.0/Caller.genruntimeconfig.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Caller/obj/Debug/net5.0/Caller.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Caller/obj/Debug/net5.0/ref/Caller.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Caller/obj/project.assets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Caller/obj/project.nuget.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Caller/obj/project.packagespec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Caller/obj/rider.project.restore.info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Client.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Environment.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MPesa.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Request.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Response.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0/MPesa.deps.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0/MPesa.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0/MPesa.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0/Test.deps.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0/ref/MPesa.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/Debug/net5.0/ref/Test.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helpers/RsaUtility.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/internal/InternalClient.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/Debug/net5.0/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/Debug/net5.0/MPesa.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/Debug/net5.0/MPesa.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/Debug/net5.0/MPesa.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/Debug/net5.0/MPesa.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/Debug/net5.0/MPesa.csproj.AssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/Debug/net5.0/MPesa.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/Debug/net5.0/MPesa.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/Debug/net5.0/MPesa.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/Debug/net5.0/MPesa.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/Debug/net5.0/Test.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/Debug/net5.0/Test.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/Debug/net5.0/Test.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/Debug/net5.0/Test.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/Debug/net5.0/Test.csproj.AssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/Debug/net5.0/Test.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/Debug/net5.0/Test.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/Debug/net5.0/Test.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/Debug/net5.0/Test.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/Debug/net5.0/ref/MPesa.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/Debug/net5.0/ref/Test.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/MPesa.csproj.nuget.dgspec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/MPesa.csproj.nuget.g.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/MPesa.csproj.nuget.g.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/Test.csproj.nuget.dgspec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/Test.csproj.nuget.g.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/Test.csproj.nuget.g.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/project.assets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/project.nuget.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/project.packagespec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/obj/rider.project.restore.info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Test.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1x1shFf76DCTBpMNcZUXBCuddbC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="17589a46-6360-4e8e-bea9-32a3700ab01b" name="Default Changelist" comment="" />
+      <created>1629534045424</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1629534045424</updated>
+      <workItem from="1629534057561" duration="46000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>
