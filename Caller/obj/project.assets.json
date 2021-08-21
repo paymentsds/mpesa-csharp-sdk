@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     "net5.0": {
+      "BouncyCastle.NetCore/1.8.8": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/BouncyCastle.Crypto.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/BouncyCastle.Crypto.dll": {}
+        }
+      },
       "Microsoft.NETCore.Platforms/1.1.0": {
         "type": "package",
         "compile": {
@@ -666,6 +675,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "BouncyCastle.NetCore": "1.8.8",
           "System.Security.Cryptography.X509Certificates": "4.3.2"
         },
         "compile": {
@@ -678,6 +688,31 @@
     }
   },
   "libraries": {
+    "BouncyCastle.NetCore/1.8.8": {
+      "sha512": "Jx3dQd4SQOHZmxcImYSp0YT2WpYxosQXoZutbHORhFK/zHGH8aykfIyM6S4DVGyu4g9+KHGJUQEh2RH4qXj/Jg==",
+      "type": "package",
+      "path": "bouncycastle.netcore/1.8.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "bouncycastle.netcore.1.8.8.nupkg.sha512",
+        "bouncycastle.netcore.nuspec",
+        "lib/Mono/BouncyCastle.Crypto.dll",
+        "lib/Mono/BouncyCastle.Crypto.xml",
+        "lib/MonoAndroid/BouncyCastle.Crypto.dll",
+        "lib/MonoAndroid/BouncyCastle.Crypto.xml",
+        "lib/MonoMac/BouncyCastle.Crypto.dll",
+        "lib/MonoMac/BouncyCastle.Crypto.xml",
+        "lib/MonoTouch/BouncyCastle.Crypto.dll",
+        "lib/MonoTouch/BouncyCastle.Crypto.xml",
+        "lib/net20/BouncyCastle.Crypto.dll",
+        "lib/net20/BouncyCastle.Crypto.xml",
+        "lib/netstandard2.0/BouncyCastle.Crypto.dll",
+        "lib/netstandard2.0/BouncyCastle.Crypto.xml",
+        "lib/xamarinios/BouncyCastle.Crypto.dll",
+        "lib/xamarinios/BouncyCastle.Crypto.xml"
+      ]
+    },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
       "type": "package",
@@ -2546,19 +2581,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/delfim/.nuget/packages/": {}
+    "/home/mazivila/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/delfim/Documents/Projects/personal/mpesa-csharp-sdk/Caller/Caller.csproj",
+      "projectUniqueName": "/home/mazivila/Work/Paymentsds/mpesa-csharp-sdk/Caller/Caller.csproj",
       "projectName": "Caller",
-      "projectPath": "/Users/delfim/Documents/Projects/personal/mpesa-csharp-sdk/Caller/Caller.csproj",
-      "packagesPath": "/Users/delfim/.nuget/packages/",
-      "outputPath": "/Users/delfim/Documents/Projects/personal/mpesa-csharp-sdk/Caller/obj/",
+      "projectPath": "/home/mazivila/Work/Paymentsds/mpesa-csharp-sdk/Caller/Caller.csproj",
+      "packagesPath": "/home/mazivila/.nuget/packages/",
+      "outputPath": "/home/mazivila/Work/Paymentsds/mpesa-csharp-sdk/Caller/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/delfim/.nuget/NuGet/NuGet.Config"
+        "/home/mazivila/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -2570,8 +2605,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "/Users/delfim/Documents/Projects/personal/mpesa-csharp-sdk/MPesa/MPesa.csproj": {
-              "projectPath": "/Users/delfim/Documents/Projects/personal/mpesa-csharp-sdk/MPesa/MPesa.csproj"
+            "/home/mazivila/Work/Paymentsds/mpesa-csharp-sdk/MPesa/MPesa.csproj": {
+              "projectPath": "/home/mazivila/Work/Paymentsds/mpesa-csharp-sdk/MPesa/MPesa.csproj"
             }
           }
         }
@@ -2600,7 +2635,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
       }
     }
   }

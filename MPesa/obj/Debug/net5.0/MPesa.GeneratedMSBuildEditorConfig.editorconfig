@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = MPesa
-build_property.ProjectDir = /Users/delfim/Documents/Projects/personal/mpesa-csharp-sdk/MPesa/
+build_property.ProjectDir = /home/mazivila/Work/Paymentsds/mpesa-csharp-sdk/MPesa/
