@@ -1,0 +1,11 @@
+.DS_Store
+.vscode/
+/backup/
+.idea/
+appsettings.Development.json
+obj/
+bin/
+.vs
+.suo
+*.db
+*.csproj

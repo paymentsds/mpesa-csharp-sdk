@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/mazivila/Work/Paymentsds/mpesa-csharp-sdk/MPesa/MPesa.csproj": {}
+    "/Users/delfim/Documents/Projects/personal/mpesa-csharp-sdk/MPesa/MPesa.csproj": {}
   },
   "projects": {
-    "/home/mazivila/Work/Paymentsds/mpesa-csharp-sdk/MPesa/MPesa.csproj": {
+    "/Users/delfim/Documents/Projects/personal/mpesa-csharp-sdk/MPesa/MPesa.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/mazivila/Work/Paymentsds/mpesa-csharp-sdk/MPesa/MPesa.csproj",
+        "projectUniqueName": "/Users/delfim/Documents/Projects/personal/mpesa-csharp-sdk/MPesa/MPesa.csproj",
         "projectName": "MPesa",
-        "projectPath": "/home/mazivila/Work/Paymentsds/mpesa-csharp-sdk/MPesa/MPesa.csproj",
-        "packagesPath": "/home/mazivila/.nuget/packages/",
-        "outputPath": "/home/mazivila/Work/Paymentsds/mpesa-csharp-sdk/MPesa/obj/",
+        "projectPath": "/Users/delfim/Documents/Projects/personal/mpesa-csharp-sdk/MPesa/MPesa.csproj",
+        "packagesPath": "/Users/delfim/.nuget/packages/",
+        "outputPath": "/Users/delfim/Documents/Projects/personal/mpesa-csharp-sdk/MPesa/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/mazivila/.nuget/NuGet/NuGet.Config"
+          "/Users/delfim/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -62,7 +62,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
         }
       }
     }

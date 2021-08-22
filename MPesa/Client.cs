@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
-using MPesa.@internal;
+using MPesa.Internal;
 
 namespace MPesa
 {
@@ -15,10 +15,10 @@ namespace MPesa
                 securityCredential);
         }
 
-        // public async Task<Response> Receive(Request request)
-        // {
-        //     //return InternalClient.
-        // }
+        public async Task<Response> Receive(Request request)
+        {
+            return await InternalClient.receive(request);
+        }
 
         public class Builder
         {
