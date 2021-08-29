@@ -29,9 +29,9 @@ namespace Caller
 
             var paymentRequest = new Request.Builder()
                 .Amount(10.0)
-                .From("258840340634")
-                .Reference("T12344I")
-                .Transaction("T12344C")
+                .From("258842660175")
+                .Reference("T12344U")
+                .Transaction("T12344A")
                 .Build();
 
             var response = client.Receive(paymentRequest);

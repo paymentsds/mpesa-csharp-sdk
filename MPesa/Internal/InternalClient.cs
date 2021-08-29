@@ -5,6 +5,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
+using MPesa.helpers;
 using MPesa.security;
 
 namespace MPesa.Internal
@@ -115,7 +116,7 @@ namespace MPesa.Internal
             //     input_ServiceProviderCode = "171717"
             // };
 
-            var json = JsonSerializer.Serialize(body);
+            /*var json = JsonSerializer.Serialize(body);
             
             var data = new StringContent(json, Encoding.UTF8, "application/json");
             
@@ -126,6 +127,9 @@ namespace MPesa.Internal
             http.DefaultRequestHeaders.Add("Origin", "developer.mpesa.vm.co.mz");
             http.BaseAddress = new Uri("https://api.sandbox.vm.co.mz:18352");
             var result = await http.PostAsync("/ipg/v1x/c2bPayment/singleStage/", data);
+            Console.WriteLine(result);*/
+            
+            var result = await HttpClientHelper.GetHttpClient(body, AuthorizationToken);
             Console.WriteLine(result);
             
             return result;

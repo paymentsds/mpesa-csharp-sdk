@@ -34,3 +34,15 @@
 /Users/delfim/Documents/Projects/personal/mpesa-csharp-sdk/MPesa/obj/Debug/net5.0/MPesa.dll
 /Users/delfim/Documents/Projects/personal/mpesa-csharp-sdk/MPesa/obj/Debug/net5.0/ref/MPesa.dll
 /Users/delfim/Documents/Projects/personal/mpesa-csharp-sdk/MPesa/obj/Debug/net5.0/MPesa.pdb
+C:\Jose\PaymentSDK\SDKC#\mpesa-csharp-sdk\MPesa\bin\Debug\net5.0\MPesa.deps.json
+C:\Jose\PaymentSDK\SDKC#\mpesa-csharp-sdk\MPesa\bin\Debug\net5.0\MPesa.dll
+C:\Jose\PaymentSDK\SDKC#\mpesa-csharp-sdk\MPesa\bin\Debug\net5.0\ref\MPesa.dll
+C:\Jose\PaymentSDK\SDKC#\mpesa-csharp-sdk\MPesa\bin\Debug\net5.0\MPesa.pdb
+C:\Jose\PaymentSDK\SDKC#\mpesa-csharp-sdk\MPesa\obj\Debug\net5.0\MPesa.csproj.AssemblyReference.cache
+C:\Jose\PaymentSDK\SDKC#\mpesa-csharp-sdk\MPesa\obj\Debug\net5.0\MPesa.GeneratedMSBuildEditorConfig.editorconfig
+C:\Jose\PaymentSDK\SDKC#\mpesa-csharp-sdk\MPesa\obj\Debug\net5.0\MPesa.AssemblyInfoInputs.cache
+C:\Jose\PaymentSDK\SDKC#\mpesa-csharp-sdk\MPesa\obj\Debug\net5.0\MPesa.AssemblyInfo.cs
+C:\Jose\PaymentSDK\SDKC#\mpesa-csharp-sdk\MPesa\obj\Debug\net5.0\MPesa.csproj.CoreCompileInputs.cache
+C:\Jose\PaymentSDK\SDKC#\mpesa-csharp-sdk\MPesa\obj\Debug\net5.0\MPesa.dll
+C:\Jose\PaymentSDK\SDKC#\mpesa-csharp-sdk\MPesa\obj\Debug\net5.0\ref\MPesa.dll
+C:\Jose\PaymentSDK\SDKC#\mpesa-csharp-sdk\MPesa\obj\Debug\net5.0\MPesa.pdb

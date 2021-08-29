@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "/Users/delfim/.dotnet/store/|arch|/|tfm|",
-      "/Users/delfim/.nuget/packages"
+      "C:\\Users\\XPNT\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\XPNT\\.nuget\\packages"
     ]
   }
 }
