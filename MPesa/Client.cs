@@ -19,6 +19,21 @@ namespace MPesa
         {
             return await InternalClient.Receive(request);
         }
+        
+        public async Task<Response> Send(Request request)
+        {
+            return await InternalClient.Send(request);
+        }
+        
+        public async Task<Response> Query(Request request)
+        {
+            return await InternalClient.Query(request);
+        }
+        
+        public async Task<Response> Revert(Request request)
+        {
+            return await InternalClient.Revert(request);
+        }
 
         public class Builder
         {

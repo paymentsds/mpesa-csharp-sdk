@@ -40,10 +40,10 @@ namespace MPesa.Internal
                 throw new ArgumentNullException(request.From, "Request must contain a 'from' field to receive money.");
             }
 
-            var httpResponseMessage = await HttpClientHelper.GetHttpClient(request, AuthorizationToken,
+            var httpResponseMessage = await HttpClientHelper.HttpClientCallAsync(request, AuthorizationToken,
                 ConstantsHelper.PORT_C2B, ServiceProviderCode);
 
-            var mpesaResponse = await HttpResponseMessageDeserializer.DeserializeMessage(httpResponseMessage);
+            var mpesaResponse = await HttpClientHelper.DeserializeResponseMessage(httpResponseMessage);
 
             return new Response(mpesaResponse.ConversationId, mpesaResponse.TransactionId, mpesaResponse.ResponseDesc,
                 mpesaResponse.ResponseCode, mpesaResponse.ThirdPartyReference, mpesaResponse.ResponseTransactionStatus);
@@ -51,29 +51,63 @@ namespace MPesa.Internal
 
         public async Task<Response> Send(Request request)
         {
-            return null;
-            // if (request.From == null)
-            // {
-            //     throw new ArgumentNullException(request.From, "Request must contain a 'from' field to receive money.");
-            // }
+            MpesaResponse mpesaResponse;
+
+            if (request.To == null)
+            {
+                throw new ArgumentNullException(request.To, "Request must contain a 'to' field to send money.");
+            }
+
+            if (request.To.StartsWith("258") && request.To.Length == 12)
+            {
+                var httpResponseMessage = await HttpClientHelper.HttpClientCallAsync(request, AuthorizationToken,
+                    ConstantsHelper.PORT_B2C, ServiceProviderCode);
+
+                mpesaResponse = await HttpClientHelper.DeserializeResponseMessage(httpResponseMessage);
+            }
+            else
+            {
+                var httpResponseMessage = await HttpClientHelper.HttpClientCallAsync(request, AuthorizationToken,
+                    ConstantsHelper.PORT_B2B, ServiceProviderCode);
+                mpesaResponse = await HttpClientHelper.DeserializeResponseMessage(httpResponseMessage);
+            }
+
+            return new Response(mpesaResponse.ConversationId, mpesaResponse.TransactionId, mpesaResponse.ResponseDesc,
+                mpesaResponse.ResponseCode, mpesaResponse.ThirdPartyReference, mpesaResponse.ResponseTransactionStatus);
         }
 
         public async Task<Response> Query(Request request)
         {
-            return null;
-            // if (request.From == null)
-            // {
-            //     throw new ArgumentNullException(request.From, "Request must contain a 'from' field to receive money.");
-            // }
+            var httpResponseMessage = await HttpClientHelper.HttpClientCallAsync(request, AuthorizationToken,
+                ConstantsHelper.PORT_QUERY, ServiceProviderCode);
+
+            var mpesaResponse = await HttpClientHelper.DeserializeResponseMessage(httpResponseMessage);
+            
+            return new Response(mpesaResponse.ConversationId, mpesaResponse.TransactionId, mpesaResponse.ResponseDesc,
+                mpesaResponse.ResponseCode, mpesaResponse.ThirdPartyReference, mpesaResponse.ResponseTransactionStatus);
         }
 
-        public async Task<Response> Reversal(Request request)
+        public async Task<Response> Revert(Request request)
         {
-            return null;
-            // if (request.From == null)
-            // {
-            //     throw new ArgumentNullException(request.From, "Request must contain a 'from' field to receive money.");
-            // }
+            if (SecurityCredential == null)
+            {
+                throw new ArgumentNullException(SecurityCredential,
+                    "Client must contain a securityCredential to revert a transaction");
+            }
+
+            if (InitiatorIdentifier == null)
+            {
+                throw new ArgumentNullException(InitiatorIdentifier,
+                    "Client must contain a initiatorIdentifier to revert a transaction");
+            }
+
+            var httpResponseMessage = await HttpClientHelper.HttpClientCallAsync(request, AuthorizationToken,
+                ConstantsHelper.PORT_REVERSAL, ServiceProviderCode, SecurityCredential, InitiatorIdentifier);
+
+            var mpesaResponse = await HttpClientHelper.DeserializeResponseMessage(httpResponseMessage);
+
+            return new Response(mpesaResponse.ConversationId, mpesaResponse.TransactionId, mpesaResponse.ResponseDesc,
+                mpesaResponse.ResponseCode, mpesaResponse.ThirdPartyReference, mpesaResponse.ResponseTransactionStatus);
         }
     }
 }

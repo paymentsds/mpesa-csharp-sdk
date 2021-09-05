@@ -15,7 +15,7 @@ namespace MPesa
         public string To { get; set; }
 
         // Query status
-        private string Subject { get; set; }
+        public string Subject { get; set; }
 
         public Request(double amount, string from, string reference, string transaction, string to, string subject)
         {
