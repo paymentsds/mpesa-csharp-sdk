@@ -18,7 +18,6 @@ namespace MPesa.Internal
         // Query Transaction Status
         [JsonPropertyName("output_ResponseTransactionStatus")]
         public string ResponseTransactionStatus { get; set; }
-
-        public MpesaResponse() { }
+        
     }
 }

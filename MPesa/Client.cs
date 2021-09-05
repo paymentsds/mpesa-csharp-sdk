@@ -17,7 +17,7 @@ namespace MPesa
 
         public async Task<Response> Receive(Request request)
         {
-            return await InternalClient.receive(request);
+            return await InternalClient.Receive(request);
         }
 
         public class Builder

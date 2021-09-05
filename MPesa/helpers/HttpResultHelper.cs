@@ -5,7 +5,7 @@ using MPesa.Internal;
 
 namespace MPesa.helpers
 {
-    public static class GetHttpResultHelper
+    public static class HttpResultHelper
     {
         public static async Task<HttpResponseMessage> GetHttpResult(HttpClient httpClient, int port, StringContent data)
         {
@@ -30,7 +30,6 @@ namespace MPesa.helpers
                 }
             }
             
-            Console.WriteLine(result);
             return result;
         }
     }

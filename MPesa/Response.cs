@@ -13,7 +13,7 @@ namespace MPesa
         // Query Transaction
         public string TransactionStatus { get; }
 
-        private Response(
+        public Response(
             string conversationId,
             string transactionId,
             string description,
