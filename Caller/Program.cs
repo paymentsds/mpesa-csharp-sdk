@@ -36,34 +36,6 @@ namespace Caller
 
             var response = client.Receive(paymentRequest);
 
-               
-
-            // var test = RsaUtility.Example(apiKey, publicKey);
-            //var test = RsaUtility.RsaEncrypt(apiKey, publicKey);
-
-            //var test = RsaUtility.GenerateAuthorizationToken(apiKey, publicKey);
-            
-            // var body = new
-            // {
-            //     input_TransactionReference = "T12344C",
-            //     input_CustomerMSISDN = "258840396628",
-            //     input_Amount = "10",
-            //     input_ThirdPartyReference = "SJGW67f",
-            //     input_ServiceProviderCode = "171717"
-            // };
-            //
-            // var json = JsonSerializer.Serialize(body);
-            //
-            // var data = new StringContent(json, Encoding.UTF8, "application/json");
-            //
-            // var http = new HttpClient();
-            //
-            // http.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            // http.DefaultRequestHeaders.Add("Authorization", $" Bearer {test}");
-            // http.DefaultRequestHeaders.Add("Origin", "developer.mpesa.vm.co.mz");
-            // http.BaseAddress = new Uri("https://api.sandbox.vm.co.mz:18352");
-            // var result = await http.PostAsync("/ipg/v1x/c2bPayment/singleStage/", data);
-            
             Console.WriteLine("");
             Console.WriteLine("Token");
             Console.WriteLine("");
@@ -72,26 +44,6 @@ namespace Caller
             Console.WriteLine("Result");
             //Console.WriteLine(result);
             Console.ReadKey();
-            
-            //http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", test);
-            //http.DefaultRequestHeaders.Host = "api.sandbox.vm.co.mz";
-            //http.BaseAddress = new Uri("api.sandbox.vm.co.mz");
-
-            //var response = await http.PostAsync("/api.sandbox.vm.co.mz/ipg/v1x/c2bPayment/singleStage:18352", data);
-            
-            // var request = new HttpRequestMessage() {
-            //     RequestUri = new Uri("http://api.sandbox.vm.co.mz:18352/ipg/v1x/c2bPayment/singleStage/"),
-            //     Method = HttpMethod.Post,
-            //     Headers =
-            //     {
-            //         Authorization = new AuthenticationHeaderValue("Bearer", test),
-            //         Host = "api.sandbox.vm.co.mz"
-            //     },
-            //     Content = new StringContent(json)
-            // };
-            // request.Headers.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            // http.DefaultRequestHeaders.Add("Origin", "developer.mpesa.vm.co.mz");
-            // var task = await http.SendAsync(request);
 
         }
     }
