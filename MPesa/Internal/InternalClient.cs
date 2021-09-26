@@ -46,12 +46,14 @@ namespace MPesa.Internal
             var mpesaResponse = await HttpClientHelper.DeserializeResponseMessage(httpResponseMessage);
 
             return new Response(mpesaResponse.ConversationId, mpesaResponse.TransactionId, mpesaResponse.ResponseDesc,
-                mpesaResponse.ResponseCode, mpesaResponse.ThirdPartyReference, mpesaResponse.ResponseTransactionStatus);
+                mpesaResponse.ResponseCode, mpesaResponse.ThirdPartyReference, mpesaResponse.ResponseTransactionStatus,
+                httpResponseMessage.IsSuccessStatusCode);
         }
 
         public async Task<Response> Send(Request request)
         {
             MpesaResponse mpesaResponse;
+            var isSuccessfully = false;
 
             if (request.To == null)
             {
@@ -62,6 +64,7 @@ namespace MPesa.Internal
             {
                 var httpResponseMessage = await HttpClientHelper.HttpClientCallAsync(request, AuthorizationToken,
                     ConstantsHelper.PORT_B2C, ServiceProviderCode);
+                isSuccessfully = httpResponseMessage.IsSuccessStatusCode;
 
                 mpesaResponse = await HttpClientHelper.DeserializeResponseMessage(httpResponseMessage);
             }
@@ -69,11 +72,13 @@ namespace MPesa.Internal
             {
                 var httpResponseMessage = await HttpClientHelper.HttpClientCallAsync(request, AuthorizationToken,
                     ConstantsHelper.PORT_B2B, ServiceProviderCode);
+                isSuccessfully = httpResponseMessage.IsSuccessStatusCode;
                 mpesaResponse = await HttpClientHelper.DeserializeResponseMessage(httpResponseMessage);
             }
 
             return new Response(mpesaResponse.ConversationId, mpesaResponse.TransactionId, mpesaResponse.ResponseDesc,
-                mpesaResponse.ResponseCode, mpesaResponse.ThirdPartyReference, mpesaResponse.ResponseTransactionStatus);
+                mpesaResponse.ResponseCode, mpesaResponse.ThirdPartyReference, mpesaResponse.ResponseTransactionStatus,
+                isSuccessfully);
         }
 
         public async Task<Response> Query(Request request)
@@ -82,9 +87,10 @@ namespace MPesa.Internal
                 ConstantsHelper.PORT_QUERY, ServiceProviderCode);
 
             var mpesaResponse = await HttpClientHelper.DeserializeResponseMessage(httpResponseMessage);
-            
+
             return new Response(mpesaResponse.ConversationId, mpesaResponse.TransactionId, mpesaResponse.ResponseDesc,
-                mpesaResponse.ResponseCode, mpesaResponse.ThirdPartyReference, mpesaResponse.ResponseTransactionStatus);
+                mpesaResponse.ResponseCode, mpesaResponse.ThirdPartyReference, mpesaResponse.ResponseTransactionStatus,
+                httpResponseMessage.IsSuccessStatusCode);
         }
 
         public async Task<Response> Revert(Request request)
@@ -107,7 +113,20 @@ namespace MPesa.Internal
             var mpesaResponse = await HttpClientHelper.DeserializeResponseMessage(httpResponseMessage);
 
             return new Response(mpesaResponse.ConversationId, mpesaResponse.TransactionId, mpesaResponse.ResponseDesc,
-                mpesaResponse.ResponseCode, mpesaResponse.ThirdPartyReference, mpesaResponse.ResponseTransactionStatus);
+                mpesaResponse.ResponseCode, mpesaResponse.ThirdPartyReference, mpesaResponse.ResponseTransactionStatus,
+                httpResponseMessage.IsSuccessStatusCode);
+        }
+
+        public async Task<Response> QueryCustomerName(Request request)
+        {
+            var httpResponseMessage = await HttpClientHelper.HttpClientCallAsync(request, AuthorizationToken,
+                ConstantsHelper.PORT_CUSTOMER_NAME, ServiceProviderCode);
+
+            var mpesaResponse = await HttpClientHelper.DeserializeResponseMessage(httpResponseMessage);
+
+            return new Response(mpesaResponse.ConversationId, mpesaResponse.TransactionId, mpesaResponse.ResponseDesc,
+                mpesaResponse.ResponseCode, mpesaResponse.ThirdPartyReference, mpesaResponse.ResponseTransactionStatus,
+                httpResponseMessage.IsSuccessStatusCode);
         }
     }
 }

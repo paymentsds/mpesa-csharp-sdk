@@ -5,31 +5,31 @@ namespace MPesa.Internal
     public class MpesaRequest
     {
         [JsonPropertyName("input_TransactionReference")]
-        public string TransactionReference { get; set; }
+        private string TransactionReference { get; set; }
         [JsonPropertyName("input_amount")] 
-        public string Amount { get; set; }
-        [JsonPropertyName("input_ThirdPartyReference")] 
-        public string ThirdPartyReference { get; set; }
-        [JsonPropertyName("input_CustomerMSISDN")] 
-        public string CustomerMsisdn { get; set; }
-        [JsonPropertyName("input_ServiceProviderCode")] 
-        public string ServiceProviderCode { get; set; }
+        private string Amount { get; set; }
+        [JsonPropertyName("input_ThirdPartyReference")]
+        private string ThirdPartyReference { get; set; }
+        [JsonPropertyName("input_CustomerMSISDN")]
+        private string CustomerMsisdn { get; set; }
+        [JsonPropertyName("input_ServiceProviderCode")]
+        private string ServiceProviderCode { get; set; }
         
         // B2B
         [JsonPropertyName("input_PrimaryPartyCode")]
-        public string PrimaryPartyCode { get; set; }
+        private string PrimaryPartyCode { get; set; }
         [JsonPropertyName("input_ReceiverPartyCode")]
-        public string ReceiverPartyCode { get; set; }
+        private string ReceiverPartyCode { get; set; }
         
         // Reversal
         [JsonPropertyName("input_ReversalAmount")]
-        public string ReversalAmount { get; set; }
+        private string ReversalAmount { get; set; }
         [JsonPropertyName("input_InitiatorIdentifier")]
-        public string InitiatorIdentifier { get; set; }
+        private string InitiatorIdentifier { get; set; }
         [JsonPropertyName("input_SecurityCredential")]
-        public string SecurityCredential { get; set; }
+        private string SecurityCredential { get; set; }
         [JsonPropertyName("input_TransactionID")]
-        public string TransactionId { get; set; }
+        private string TransactionId { get; set; }
 
         private MpesaRequest() { }
 
