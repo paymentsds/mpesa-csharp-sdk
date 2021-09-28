@@ -36,10 +36,10 @@ namespace MPesa
         }
         
         //To Validate
-        // public async Task<Response> QueryCustomerName(Request request)
-        // {
-        //     return await InternalClient.QueryCustomerName(request);
-        // }
+        public async Task<Response> QueryCustomerName(Request request)
+        {
+            return await InternalClient.QueryCustomerName(request);
+        }
 
         public class Builder
         {
