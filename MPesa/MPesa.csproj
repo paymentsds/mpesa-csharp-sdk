@@ -2,6 +2,16 @@
 
     <PropertyGroup>
         <TargetFramework>net5.0</TargetFramework>
+        <PackageId>Paymentsds.Sdk.MPesaSdk</PackageId>
+        <Title>Paymentsds MPesa-csharp-sdk</Title>
+        <Authors>Delfim Uqueio, Eurico Mazivila, Jose Machanguele, Jossias Mupandza</Authors>
+        <Description>M-Pesa SDK for C# is an unofficial library aiming to help businesses integrating every M-Pesa operations to their C# applications.</Description>
+        <Company>Paymentsds</Company>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <PackageTags>Paymentsds, MPesa, SDK</PackageTags>
+        <RepositoryUrl>https://github.com/paymentsds/mpesa-csharp-sdk</RepositoryUrl>
+        <Version>0.1.0</Version>
+        <WebPage>paymentsds.org</WebPage>
     </PropertyGroup>
 
     <ItemGroup>
