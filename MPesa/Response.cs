@@ -9,8 +9,7 @@ namespace MPesa
         public string Description { get; }
         public string Code { get; }
         public string ThirdPartyRef { get; }
-        public bool IsSuccessfully { get; set; }
-
+        
         // Query Transaction
         public string TransactionStatus { get; }
 
@@ -20,8 +19,7 @@ namespace MPesa
             string description,
             string code,
             string thirdPartyRef,
-            string transactionStatus,
-            bool isSuccessfully
+            string transactionStatus
         )
         {
             ConversationId = conversationId;
@@ -30,13 +28,12 @@ namespace MPesa
             Code = code;
             ThirdPartyRef = thirdPartyRef;
             TransactionStatus = transactionStatus;
-            IsSuccessfully = isSuccessfully;
         }
 
-        // public static Response FromMpesaResponse(MpesaResponse mpesaResponse)
-        // {
-        //     return new Response(mpesaResponse.ConversationId, mpesaResponse.TransactionId, mpesaResponse.ResponseDesc,
-        //         mpesaResponse.ResponseCode, mpesaResponse.ThirdPartyReference, mpesaResponse.ResponseTransactionStatus);
-        // }
+        public static Response FromMpesaResponse(MpesaResponse mpesaResponse)
+        {
+            return new Response(mpesaResponse.ConversationId, mpesaResponse.TransactionId, mpesaResponse.ResponseDesc,
+                mpesaResponse.ResponseCode, mpesaResponse.ThirdPartyReference, mpesaResponse.ResponseTransactionStatus);
+        }
     }
 }

@@ -55,7 +55,7 @@ namespace MPesa.helpers
                     result = await httpClient.PutAsync($"/ipg/v1x/{ConstantsHelper.PATH_REVERSAL}", data);
                     break;
                 }
-                
+
                 case ConstantsHelper.PORT_CUSTOMER_NAME:
                 {
                     result = await httpClient.GetAsync(

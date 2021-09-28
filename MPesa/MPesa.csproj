@@ -2,21 +2,11 @@
 
     <PropertyGroup>
         <TargetFramework>net5.0</TargetFramework>
-        <PackageId>Paymentsds.Sdk.Mpesa</PackageId>
-        <Title>Paymentsds MPesa-csharp-sdk</Title>
-        <Authors>Delfim Uqueio, Eurico Mazivila, Jose Machanguele and Jossias Mupandza</Authors>
-        <Company>Paymentsds</Company>
-        <Description>SDK to make M-Pesa integration easy for developers</Description>
-        <PackageLicenseExpression>MIT</PackageLicenseExpression>
-        <PackageTags>SDK, MPesa, Paymentsds</PackageTags>
-        <RepositoryUrl>https://github.com/paymentsds/mpesa-csharp-sdk</RepositoryUrl>
-        <WebPage>https://www.nuget.org/</WebPage>
-        <Version>0.1.0</Version>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="BouncyCastle.NetCore" Version="1.8.8"/>
-        <PackageReference Include="System.Security.Cryptography.X509Certificates" Version="4.3.2"/>
+      <PackageReference Include="BouncyCastle.NetCore" Version="1.8.8" />
+      <PackageReference Include="System.Security.Cryptography.X509Certificates" Version="4.3.2" />
     </ItemGroup>
 
 </Project>

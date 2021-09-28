@@ -27,7 +27,7 @@ namespace Caller
             var paymentRequest = new Request.Builder()
                 .Amount(10.0)
                 .From("258840396628")
-                .Reference("T12344ZQ")
+                .Reference("T12344ZG")
                 .Transaction("T12344Q")
                 .Build();
 
