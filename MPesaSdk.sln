@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MPesa", "MPesa\MPesa.csproj", "{6143781F-168E-462C-BDFE-AE76A544F803}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Caller", "Caller\Caller.csproj", "{078F0512-D0D2-4B60-89DD-4E872EC4DC4C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example", "Example\Example.csproj", "{078F0512-D0D2-4B60-89DD-4E872EC4DC4C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
