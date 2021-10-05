@@ -1,6 +1,6 @@
 # M-Pesa SDK for C#
 
-M-Pesa SDK for C# is an unofficial library aiming to help developer businesses integrating every [M-Pesa](https://developer.mpesa.vm.co.mz) operations to their C# applications.
+M-Pesa SDK for C# is an unofficial library aiming to help developer businesses integrating every [M-Pesa](https://developer.mpesa.vm.co.mz) operations to their ASP.NET applications.
 
 ## Features
 
