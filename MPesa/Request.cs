@@ -7,7 +7,7 @@ namespace MPesa
     {
         // Receive Money
         public double Amount { get; private set; }
-        public string From { get; private set; }
+        public string From { get; set; }
         public string Reference { get; private set; }
         public string Transaction { get; private set; }
 
