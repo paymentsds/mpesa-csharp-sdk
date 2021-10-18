@@ -13,7 +13,7 @@ M-Pesa SDK for C# is an unofficial library aiming to help developer businesses i
 ## Usage
 
 ### Receive Money from a Mobile Account
-```
+```cs
 var client = new Client.Builder()
     .ApiKey("<REPLACE>")
     .PublicKey("<REPLACE>")
@@ -29,7 +29,7 @@ var request = new Request.Builder()
     .Transaction("12345")
     .Build();
 
-//Async
+    //Async
     try
     {
         var response = await client.Receive(paymentRequest);
@@ -44,7 +44,7 @@ var request = new Request.Builder()
 ``` 
     
 ### Send Money to a Mobile Account
-```
+```cs
 var client = new Client.Builder()
     .ApiKey("<REPLACE>")
     .PublicKey("<REPLACE>")
@@ -60,7 +60,7 @@ var request = new Request.Builder()
     .Transaction("12345")
     .Build();
 
-//Async
+    //Async
     try
     {
         var response = await client.send(paymentRequest);
@@ -77,7 +77,7 @@ var request = new Request.Builder()
     
 ### Send Money to a Business Account
 
-```
+```cs
 var client = new Client.Builder()
     .ApiKey("<REPLACE>")
     .PublicKey("<REPLACE>")
@@ -93,7 +93,7 @@ var request = new Request.Builder()
     .Transaction("12345")
     .Build();
 
-//Async
+    //Async
     try
     {
         var response = await client.send(paymentRequest);
@@ -109,7 +109,7 @@ var request = new Request.Builder()
     
 ### Revert a Transaction
 
-```
+```cs
 var client = new Client.Builder()
     .ApiKey("<REPLACE>")
     .PublicKey("<REPLACE>")
@@ -125,7 +125,7 @@ var reversalRequest = new Request.Builder()
     .Transaction("12345")
     .Build();
 
-//Async
+    //Async
     try
     {
         var response = await client.revert(reversalRequest);
@@ -142,7 +142,7 @@ var reversalRequest = new Request.Builder()
     
 ### Query the status of a Transaction
 
-```
+```cs
 var client = new Client.Builder()
     .ApiKey("<REPLACE>")
     .PublicKey("<REPLACE>")
@@ -154,7 +154,7 @@ var queryRequest = new Request.Builder()
     .Subject("12345")
     .Build();
 
-//Async
+    //Async
     try
     {
         var response = await client.query(queryRequest);
