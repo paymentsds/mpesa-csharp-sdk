@@ -39,6 +39,8 @@ namespace MPesa.Internal
             {
                 throw new ArgumentNullException(request.From, "Request must contain a 'from' field to receive money.");
             }
+            
+            request.From = PhoneNumberHelper.PhoneNumber(request.From,"From");
 
             var httpResponseMessage = await HttpClientHelper.HttpClientCallAsync(request, AuthorizationToken,
                 ConstantsHelper.PORT_C2B, ServiceProviderCode);
@@ -60,17 +62,18 @@ namespace MPesa.Internal
                 throw new ArgumentNullException(request.To, "Request must contain a 'to' field to send money.");
             }
 
-            if (request.To.StartsWith("258") && request.To.Length == 12)
+            if (request.To.Length == 6)
             {
                 httpResponseMessage = await HttpClientHelper.HttpClientCallAsync(request, AuthorizationToken,
-                    ConstantsHelper.PORT_B2C, ServiceProviderCode);
-
+                    ConstantsHelper.PORT_B2B, ServiceProviderCode);
                 mpesaResponse = await HttpClientHelper.DeserializeResponseMessage(httpResponseMessage);
             }
             else
             {
+                request.To = PhoneNumberHelper.PhoneNumber(request.To, "To");   
                 httpResponseMessage = await HttpClientHelper.HttpClientCallAsync(request, AuthorizationToken,
-                    ConstantsHelper.PORT_B2B, ServiceProviderCode);
+                    ConstantsHelper.PORT_B2C, ServiceProviderCode);
+
                 mpesaResponse = await HttpClientHelper.DeserializeResponseMessage(httpResponseMessage);
             }
 

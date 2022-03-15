@@ -25,8 +25,8 @@ namespace Example
             //C2B
             var paymentRequest = new Request.Builder()
                 .Amount(10.0)
-                .From("258840396628")
-                .Reference("T12344ZL")
+                .From("00258840340634")
+                .Reference("T12344ZP")
                 .Transaction("T12344Q")
                 .Build();
             
