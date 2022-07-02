@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net5.0</TargetFramework>
+        <TargetFramework>netstandard2.0</TargetFramework>
         <PackageId>Paymentsds.Sdk.MPesaSdk</PackageId>
         <Title>Paymentsds MPesa-csharp-sdk</Title>
         <Authors>Delfim Uqueio, Eurico Mazivila, Jose Machanguele, Jossias Mupandza</Authors>
@@ -12,11 +12,13 @@
         <RepositoryUrl>https://github.com/paymentsds/mpesa-csharp-sdk</RepositoryUrl>
         <Version>0.1.0</Version>
         <WebPage>paymentsds.org</WebPage>
+        <PackageVersion>1.0.0</PackageVersion>
     </PropertyGroup>
 
     <ItemGroup>
       <PackageReference Include="BouncyCastle.NetCore" Version="1.8.8" />
       <PackageReference Include="System.Security.Cryptography.X509Certificates" Version="4.3.2" />
+      <PackageReference Include="System.Text.Json" Version="6.0.5" />
     </ItemGroup>
 
 </Project>
