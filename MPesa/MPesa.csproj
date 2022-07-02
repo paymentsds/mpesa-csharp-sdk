@@ -12,6 +12,7 @@
         <RepositoryUrl>https://github.com/paymentsds/mpesa-csharp-sdk</RepositoryUrl>
         <Version>0.1.0</Version>
         <WebPage>paymentsds.org</WebPage>
+        <PackageVersion>1.0.0</PackageVersion>
     </PropertyGroup>
 
     <ItemGroup>
